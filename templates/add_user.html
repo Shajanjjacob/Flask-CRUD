@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="row">
+    <div class="col-5 mx-auto">
+        <h3>Add user</h3><hr>
+        <form action="{{url_for("add_user")}}" method="post">
+            <div class="form-group">
+                <label for="">User Name</label>
+                <input type="text" required name="uname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Contact</label>
+                <input type="text" required name="contact" class="form-control">
+            </div>
+            <input type="submit" value="Submit" class="btn btn-secondary" name="" id="">
+        </form>
+
+    </div>
+</div>
+  
+{% endblock %}
